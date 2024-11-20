@@ -3,9 +3,16 @@ package it.unibo.mvc;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+import javax.swing.border.Border;
+
 import java.awt.BorderLayout;
+import java.awt.Button;
 import java.awt.Dimension;
+import java.awt.Frame;
+import java.awt.GraphicsDevice;
+import java.awt.TextField;
 import java.awt.Toolkit;
+import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Random;
@@ -28,9 +35,16 @@ public class MiniGUI {
      */
     public MiniGUI() {
         final JPanel canvas = new JPanel();
+        final JPanel newPanel = new JPanel();
+        final TextField txtf = new TextField("Result");
+        newPanel.setLayout(new BorderLayout());
         canvas.setLayout(new BorderLayout());
         final JButton write = new JButton("Print a random number on standard output");
-        canvas.add(write, BorderLayout.CENTER);
+        final JButton otherButton = new JButton("Other Button");
+        canvas.add(newPanel, BorderLayout.CENTER);
+        canvas.add(txtf, BorderLayout.NORTH);
+        canvas.add(write, BorderLayout.EAST);
+        newPanel.add(otherButton);
         frame.setContentPane(canvas);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         /*
@@ -39,7 +53,9 @@ public class MiniGUI {
         write.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(final ActionEvent e) {
-                System.out.println(randomGenerator.nextInt());
+                int i = randomGenerator.nextInt();
+                System.out.println(i);
+                txtf.setText("Result " + Integer.toString(i));
             }
         });
     }
@@ -78,7 +94,7 @@ public class MiniGUI {
      * Launches the application.
      *
      * @param args
-     *            ignored
+     *             ignored
      */
     public static void main(final String... args) {
         new MiniGUI().display();
