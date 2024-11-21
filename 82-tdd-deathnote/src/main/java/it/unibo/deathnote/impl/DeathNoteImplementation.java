@@ -41,7 +41,7 @@ public class DeathNoteImplementation implements DeathNote {
 
     @Override
     public boolean writeDetails(String details) {
-        if (this.book.get(this.lastName).getCauseOfDeath().isEmpty()) {
+        if (!this.book.get(this.lastName).getCauseOfDeath().isEmpty()) {
             return this.book.get(this.lastName).setDetailsOfDeath(details);
         }
         throw new IllegalAccessError("Before write death details, must write the cause of death");
@@ -49,12 +49,12 @@ public class DeathNoteImplementation implements DeathNote {
 
     @Override
     public String getDeathCause(String name) {
-        return this.getDeathCause(name);
+        return this.book.get(name).getCauseOfDeath();
     }
 
     @Override
     public String getDeathDetails(String name) {
-        return this.getDeathDetails(name);
+        return this.book.get(name).getDetailsOfDeath();
     }
 
     @Override
@@ -68,6 +68,7 @@ public class DeathNoteImplementation implements DeathNote {
         private long CAUSE_TIMOUT = 40;
         private long DETAILS_TIMOUT = 6000 + CAUSE_TIMOUT;
         private long timer;
+        private String DEFAULT_CAUSE = "heart attack";
 
         public Death(String cause, String details) {
             this.cause = cause;
@@ -84,7 +85,7 @@ public class DeathNoteImplementation implements DeathNote {
         }
 
         /**
-         * Set the cause of death if the argument not null
+         * Set the cause of death if the argument not null.
          * 
          * @param cause the cause of death
          * @return true if cause is not null
@@ -93,7 +94,7 @@ public class DeathNoteImplementation implements DeathNote {
 
             if (cause != null) {
                 if (System.currentTimeMillis() - this.timer > CAUSE_TIMOUT) {
-                    this.cause = "heart attack";
+                    this.cause = DEFAULT_CAUSE;
                 } else {
                     this.cause = cause;
                 }
@@ -103,7 +104,7 @@ public class DeathNoteImplementation implements DeathNote {
         }
 
         /**
-         * Set the details of death if the argument not null
+         * Set the details of death if the argument not null.
          * 
          * @param details the cause of death
          * @return true if details is not null

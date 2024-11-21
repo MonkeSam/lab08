@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.7.0" timestamp="2024-11-21T10:33:08.938">
+<file name="/Users/samueletrapani/OOP/lab08/82-tdd-deathnote/src/main/java/it/unibo/deathnote/impl/DeathNoteImplementation.java">
+<violation beginline="10" endline="10" begincolumn="32" endcolumn="36" rule="ImmutableField" ruleset="Design" package="it.unibo.deathnote.impl" class="DeathNoteImplementation" variable="book" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'book' may be declared final
+</violation>
+<violation beginline="18" endline="18" begincolumn="31" endcolumn="41" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="it.unibo.deathnote.impl" class="DeathNoteImplementation" method="getRule" variable="ruleNumber" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'ruleNumber' is not assigned and could be declared final
+</violation>
+<violation beginline="37" endline="37" begincolumn="43" endcolumn="48" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="it.unibo.deathnote.impl" class="DeathNoteImplementation" method="writeDeathCause" variable="cause" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'cause' is not assigned and could be declared final
+</violation>
+<violation beginline="43" endline="43" begincolumn="40" endcolumn="47" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="it.unibo.deathnote.impl" class="DeathNoteImplementation" method="writeDetails" variable="details" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'details' is not assigned and could be declared final
+</violation>
+<violation beginline="51" endline="51" begincolumn="40" endcolumn="44" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="it.unibo.deathnote.impl" class="DeathNoteImplementation" method="getDeathCause" variable="name" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'name' is not assigned and could be declared final
+</violation>
+<violation beginline="56" endline="56" begincolumn="42" endcolumn="46" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="it.unibo.deathnote.impl" class="DeathNoteImplementation" method="getDeathDetails" variable="name" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'name' is not assigned and could be declared final
+</violation>
+<violation beginline="61" endline="61" begincolumn="41" endcolumn="45" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="it.unibo.deathnote.impl" class="DeathNoteImplementation" method="isNameWritten" variable="name" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'name' is not assigned and could be declared final
+</violation>
+<violation beginline="68" endline="68" begincolumn="22" endcolumn="34" rule="ImmutableField" ruleset="Design" package="it.unibo.deathnote.impl" class="Death" variable="CAUSE_TIMOUT" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'CAUSE_TIMOUT' may be declared final
+</violation>
+<violation beginline="68" endline="68" begincolumn="22" endcolumn="34" rule="FieldNamingConventions" ruleset="Code Style" package="it.unibo.deathnote.impl" class="Death" variable="CAUSE_TIMOUT" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The field name 'CAUSE_TIMOUT' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="69" endline="69" begincolumn="22" endcolumn="36" rule="ImmutableField" ruleset="Design" package="it.unibo.deathnote.impl" class="Death" variable="DETAILS_TIMOUT" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'DETAILS_TIMOUT' may be declared final
+</violation>
+<violation beginline="69" endline="69" begincolumn="22" endcolumn="36" rule="FieldNamingConventions" ruleset="Code Style" package="it.unibo.deathnote.impl" class="Death" variable="DETAILS_TIMOUT" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The field name 'DETAILS_TIMOUT' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="71" endline="71" begincolumn="24" endcolumn="37" rule="ImmutableField" ruleset="Design" package="it.unibo.deathnote.impl" class="Death" variable="DEFAULT_CAUSE" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'DEFAULT_CAUSE' may be declared final
+</violation>
+<violation beginline="71" endline="71" begincolumn="24" endcolumn="37" rule="FieldNamingConventions" ruleset="Code Style" package="it.unibo.deathnote.impl" class="Death" variable="DEFAULT_CAUSE" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The field name 'DEFAULT_CAUSE' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="73" endline="73" begincolumn="29" endcolumn="34" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="it.unibo.deathnote.impl" class="Death" method="Death" variable="cause" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'cause' is not assigned and could be declared final
+</violation>
+<violation beginline="73" endline="73" begincolumn="43" endcolumn="50" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="it.unibo.deathnote.impl" class="Death" method="Death" variable="details" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'details' is not assigned and could be declared final
+</violation>
+<violation beginline="79" endline="79" begincolumn="29" endcolumn="34" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="it.unibo.deathnote.impl" class="Death" method="Death" variable="cause" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'cause' is not assigned and could be declared final
+</violation>
+<violation beginline="93" endline="93" begincolumn="24" endcolumn="39" rule="LinguisticNaming" ruleset="Code Style" package="it.unibo.deathnote.impl" class="Death" method="setCauseOfDeath" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#linguisticnaming" priority="3">
+Linguistics Antipattern - The setter 'setCauseOfDeath' should not return any type except void linguistically
+</violation>
+<violation beginline="93" endline="93" begincolumn="47" endcolumn="52" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="it.unibo.deathnote.impl" class="Death" method="setCauseOfDeath" variable="cause" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'cause' is not assigned and could be declared final
+</violation>
+<violation beginline="112" endline="112" begincolumn="24" endcolumn="41" rule="LinguisticNaming" ruleset="Code Style" package="it.unibo.deathnote.impl" class="Death" method="setDetailsOfDeath" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#linguisticnaming" priority="3">
+Linguistics Antipattern - The setter 'setDetailsOfDeath' should not return any type except void linguistically
+</violation>
+<violation beginline="112" endline="112" begincolumn="49" endcolumn="56" rule="MethodArgumentCouldBeFinal" ruleset="Code Style" package="it.unibo.deathnote.impl" class="Death" method="setDetailsOfDeath" variable="details" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#methodargumentcouldbefinal" priority="3">
+Parameter 'details' is not assigned and could be declared final
+</violation>
+</file>
+</pmd>

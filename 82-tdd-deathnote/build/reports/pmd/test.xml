@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 https://pmd.github.io/schema/report_2_0_0.xsd" version="7.7.0" timestamp="2024-11-21T10:33:10.416">
+<file name="/Users/samueletrapani/OOP/lab08/82-tdd-deathnote/src/test/java/it/unibo/deathnote/TestDeathNote.java">
+<violation beginline="17" endline="17" begincolumn="26" endcolumn="34" rule="FieldNamingConventions" ruleset="Code Style" package="it.unibo.deathnote" class="TestDeathNote" variable="WHO_DIES" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The final field name 'WHO_DIES' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="17" endline="17" begincolumn="26" endcolumn="34" rule="FinalFieldCouldBeStatic" ruleset="Design" package="it.unibo.deathnote" class="TestDeathNote" variable="WHO_DIES" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#finalfieldcouldbestatic" priority="3">
+This final field could be made static
+</violation>
+<violation beginline="18" endline="18" begincolumn="26" endcolumn="37" rule="FieldNamingConventions" ruleset="Code Style" package="it.unibo.deathnote" class="TestDeathNote" variable="HOPED_DEATH" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The final field name 'HOPED_DEATH' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="18" endline="18" begincolumn="26" endcolumn="37" rule="FinalFieldCouldBeStatic" ruleset="Design" package="it.unibo.deathnote" class="TestDeathNote" variable="HOPED_DEATH" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#finalfieldcouldbestatic" priority="3">
+This final field could be made static
+</violation>
+<violation beginline="19" endline="19" begincolumn="26" endcolumn="40" rule="FieldNamingConventions" ruleset="Code Style" package="it.unibo.deathnote" class="TestDeathNote" variable="CAUSE_OF_DEATH" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The final field name 'CAUSE_OF_DEATH' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="19" endline="19" begincolumn="26" endcolumn="40" rule="FinalFieldCouldBeStatic" ruleset="Design" package="it.unibo.deathnote" class="TestDeathNote" variable="CAUSE_OF_DEATH" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#finalfieldcouldbestatic" priority="3">
+This final field could be made static
+</violation>
+<violation beginline="21" endline="21" begincolumn="30" endcolumn="46" rule="UnusedPrivateField" ruleset="Best Practices" package="it.unibo.deathnote" class="TestDeathNote" variable="OVERTIME_DETAILS" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_bestpractices.html#unusedprivatefield" priority="3">
+Avoid unused private fields such as 'OVERTIME_DETAILS'.
+</violation>
+<violation beginline="22" endline="22" begincolumn="20" endcolumn="33" rule="ImmutableField" ruleset="Design" package="it.unibo.deathnote" class="TestDeathNote" variable="DEFAULT_CAUSE" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_design.html#immutablefield" priority="3">
+Field 'DEFAULT_CAUSE' may be declared final
+</violation>
+<violation beginline="22" endline="22" begincolumn="20" endcolumn="33" rule="FieldNamingConventions" ruleset="Code Style" package="it.unibo.deathnote" class="TestDeathNote" variable="DEFAULT_CAUSE" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#fieldnamingconventions" priority="1">
+The field name 'DEFAULT_CAUSE' doesn't match '[a-z][a-zA-Z0-9]*'
+</violation>
+<violation beginline="55" endline="55" begincolumn="21" endcolumn="22" rule="LocalVariableCouldBeFinal" ruleset="Code Style" package="it.unibo.deathnote" class="TestDeathNote" method="checkEmptyRules" variable="s" externalInfoUrl="https://docs.pmd-code.org/pmd-doc-7.7.0/pmd_rules_java_codestyle.html#localvariablecouldbefinal" priority="3">
+Local variable 's' could be declared final
+</violation>
+</file>
+</pmd>
